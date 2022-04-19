@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alkohola Kalkulators</title>
+  </head>
+  <body>
+    <h1 id="name">ALKOHOLA KALKULATORS</h1>
+    <script type="module" src="script.js" defer></script>
+    <div class="container">
+      <div class="main-box">
+        <div class="genders">
+          <input
+            type="radio"
+            value="0.68"
+            name="dzimums"
+            id="virietis"
+            checked
+          />
+          <label for="virietis" class="glabel">VĪRIETIS</label>
+        </div>
+        <br />
+        <div class="genders">
+          <input type="radio" value="0.55" name="dzimums" id="sieviete" />
+          <label for="sieviete" class="glabel">SIEVIETE</label>
+        </div>
+        <br /><br />
+        <div class="labels">
+          <label class="svars">SVARS</label>
+          <span id="svarsValue" class="kg"></span>
+        </div>
+        <input type="range" min="40" max="200" value="80" id="svars" />
+        <div class="maxmin">
+          <span>40</span>
+          <span>200</span>
+        </div>
+        <br />
+        <div class="labels">
+          <label>LAIKS PĒC PĒDĒJĀ DZĒRIENA</label>
+          <span id="laiksValue"></span>
+        </div>
+        <input type="range" min="0" max="48" value="10" id="laiks" step="0.5" />
+        <div class="maxmin">
+          <span>0</span>
+          <span>48</span>
+        </div>
+        <div id="drink">
+          <select name="drinks" class="drinks">
+            <option value="0.05" selected>Bezalkoholiskais alus 0.5%</option>
+            <option value="4">Viegls alus 4%</option>
+            <option value="4.5">Sidrs 4.5%</option>
+            <option value="5.2">Alus 5.2%</option>
+            <option value="7">Stiprs alus 7%</option>
+            <option value="7.5">Vājš dzirkstošais vīns 7.5%</option>
+            <option value="9">Vājš vīns 9%</option>
+            <option value="11">Dzirkstošais vīns 11%</option>
+            <option value="12">Vīns 12%</option>
+            <option value="14">Stiprs vīns 14%</option>
+            <option value="17">Vājš liķieris 20%</option>
+            <option value="19">Portvīns 19%</option>
+            <option value="20">Liķieris 20%</option>
+            <option value="30">Stiprs liķieris 30%</option>
+            <option value="35">Jagermeister 35%</option>
+            <option value="38">Tekila 38%</option>
+            <option value="40">Viskijs 40%</option>
+            <option value="40">Konjaks 40%</option>
+            <option value="40">Brendijs 40%</option>
+            <option value="40">Šnabis 40%</option>
+            <option value="40">Rums 40%</option>
+            <option value="45">Balzāms 45%</option>
+            <option value="50">Absints 50%</option>
+            <option value="60">Stiprs rums 60%</option>
+            <option value="80">Īpaši stiprs rums 80%</option>
+            <option value="95">Spirts 95%</option>
+          </select>
+          <br />
+          <br />
+          <div class="labels">
+            <label>IZDZERTAIS APJOMS</label>
+            <span class="apjomsValue"></span>
+          </div>
+          <input
+            type="range"
+            min="50"
+            max="2000"
+            value="500"
+            class="apjoms"
+            step="50"
+          />
+          <div class="maxmin">
+            <span>50</span>
+            <span>2000</span>
+          </div>
+        </div>
+        <button id="add-btn" class="ctrl-btn">+ PIEVIENOT DZĒRIENU</button>
+        <button id="calc-btn" class="ctrl-btn">APRĒĶINĀT</button><br />
+      </div>
+      <div class="result-box">
+        <h2>REZULTĀTS</h2>
+        <h1>Jūsu asinīs ir <span id="bac">0</span> promiles alkohola</h1>
+        <h3 id="comment">Jūs drīkstat vadīt transportlīdzekli.</h3>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+body {
+  background: rgb(206, 249, 252);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+button {
+  cursor: pointer;
+  background: #58e5c6;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #16147b;
+  transition: 0.1s;
+  border: none;
+}
+button:hover {
+  background-color: #2e967f;
+}
+#name {
+  color: #161447;
+  text-align: center;
+}
+.ctrl-btn {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.ctrl-btn:active {
+  width: 280px;
+  height: 36px;
+}
+
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+input[type="radio"] {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transform: translate(0px, -4px);
+}
+.glabel {
+  margin-left: 10px;
+}
+.labels {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.maxmin {
+  font-weight: 300;
+  color: #545297;
+  font-size: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.genders {
+  display: flex;
+  justify-content: left;
+}
+select {
+  background-color: #161447;
+  color: white;
+  border: 1px solid #545297;
+  border-radius: 3px;
+  width: 80%;
+  height: 40px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.result-box {
+  margin-top: 18px;
+  padding: 20px;
+  height: 480px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  color: #161447;
+}
+.main-box {
+  width: 400px;
+  border-radius: 5px;
+  padding: 30px;
+  background-color: #161447;
+  text-align: center;
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding-top: 30px;
+}
+.remove {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  transform: translate(30px, -50px);
+  font-size: 160%;
+  line-height: 17px;
+}
+.remove:active {
+  width: 18px;
+  height: 18px;
+  line-height: 14px;
+}
+.new-drink {
+  width: 370px;
+  height: auto;
+  border: 1px solid #545297;
+  padding: 15px;
+  margin: 20px;
+  margin-left: 0px;
+}
+#comment {
+  font-size: 18px;
+  margin-top: 80%;
+  font-weight: 100;
+}
